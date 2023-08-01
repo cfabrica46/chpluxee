@@ -1,0 +1,4 @@
+github.com/cfabrica46/attrdet v0.0.0-20230801040753-29130c3dd2aa h1:vAWglueC9Ac2jofkaP0AQ+KyrzVajlOwuO6e4BbEIcw=
+github.com/cfabrica46/attrdet v0.0.0-20230801040753-29130c3dd2aa/go.mod h1:wcShjlO5JyO7jsMA4UWphpQsJvbusg2LHcMd6639o9s=
+golang.org/x/net v0.13.0 h1:Nvo8UFsZ8X3BhAC9699Z1j7XQ3rsZnUUm7jfBEk1ueY=
+golang.org/x/net v0.13.0/go.mod h1:zEVYFnQC7m/vmpQFELhcD1EWkZlX69l4oqgmer6hfKA=

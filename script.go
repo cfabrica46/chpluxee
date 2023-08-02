@@ -7,7 +7,6 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"sync"
 
 	"github.com/cfabrica46/attrdet"
 	"golang.org/x/net/html"
@@ -28,8 +27,6 @@ func main() {
 
 	folderPath := flag.Arg(0)
 
-	var wg sync.WaitGroup
-
 	var angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int
 
 	if *angularFlag {
@@ -42,14 +39,10 @@ func main() {
 		thymeleafVars = make(map[string]int)
 	}
 
-	processFolder(folderPath, angularFlag, thymeleafFlag, scriptFlag, &wg, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
-
-	wg.Wait()
+	processFolder(folderPath, angularFlag, thymeleafFlag, scriptFlag, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
 }
 
-func processFolder(folderPath string, angularFlag, thymeleafFlag, scriptFlag *bool, wg *sync.WaitGroup, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int) {
-	defer wg.Done()
-
+func processFolder(folderPath string, angularFlag, thymeleafFlag, scriptFlag *bool, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int) {
 	files, err := ioutil.ReadDir(folderPath)
 	if err != nil {
 		fmt.Println("Error reading folder:", err)
@@ -59,21 +52,18 @@ func processFolder(folderPath string, angularFlag, thymeleafFlag, scriptFlag *bo
 
 	for _, file := range files {
 		if file.IsDir() {
-			// For directories, call recursively to process all files in the subdirectory
-			wg.Add(1)
-			go processFolder(filepath.Join(folderPath, file.Name()), angularFlag, thymeleafFlag, scriptFlag, wg, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
+			processFolder(filepath.Join(folderPath, file.Name()), angularFlag, thymeleafFlag, scriptFlag, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
 		} else {
-			wg.Add(1)
-			go processFile(filepath.Join(folderPath, file.Name()), angularFlag, thymeleafFlag, scriptFlag, wg, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
+			processFile(filepath.Join(folderPath, file.Name()), angularFlag, thymeleafFlag, scriptFlag, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
 		}
 	}
 }
 
-func processFile(filePath string, angularFlag, thymeleafFlag, scriptFlag *bool, wg *sync.WaitGroup, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int) {
-	defer wg.Done()
+func processFile(filePath string, angularFlag, thymeleafFlag, scriptFlag *bool, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int) {
+	// fmt.Printf("\n\n%s\n\n", filePath)
 
 	// Check if the file is a HTML file
-	if filepath.Ext(filePath) != ".html" {
+	if filepath.Ext(filePath) != ".html" && filepath.Ext(filePath) != ".mst" {
 		return
 	}
 

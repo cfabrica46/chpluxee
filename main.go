@@ -13,11 +13,12 @@ import (
 )
 
 var (
-	angularFlag   bool
-	thymeleafFlag bool
-	scriptFlag    bool
-
-	rootCmd = &cobra.Command{
+	angularFlag    bool
+	thymeleafFlag  bool
+	scriptFlag     bool
+	fileOutputFlag bool
+	outputDir      string
+	rootCmd        = &cobra.Command{
 		Use:   "main",
 		Short: "Attribute detector",
 		Long:  `This program detects certain attributes in HTML files.`,
@@ -37,6 +38,13 @@ var (
 			angularVars := make(map[string]int)
 			thymeleafVars := make(map[string]int)
 
+			// Create the output directory if it doesn't exist
+			err := os.Mkdir(outputDir, os.ModePerm)
+			if err != nil {
+				fmt.Fprintln(os.Stderr, "Error:", err)
+				os.Exit(1)
+			}
+
 			return processFolder(folderPath, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
 		},
 	}
@@ -46,6 +54,8 @@ func init() {
 	rootCmd.PersistentFlags().BoolVarP(&angularFlag, "angular", "a", false, "Detect Angular attributes (ng-)")
 	rootCmd.PersistentFlags().BoolVarP(&thymeleafFlag, "thymeleaf", "t", false, "Detect Thymeleaf attributes (th:)")
 	rootCmd.PersistentFlags().BoolVarP(&scriptFlag, "scripts", "s", false, "Count <script> tags")
+	rootCmd.PersistentFlags().BoolVarP(&fileOutputFlag, "fileoutput", "f", false, "Outputs the results to a file with the name of the folder and .txt extension")
+	rootCmd.PersistentFlags().StringVarP(&outputDir, "outputdir", "o", "output", "Specify the directory to store output files")
 }
 
 func main() {
@@ -126,7 +136,31 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 	}
 
 	results = append(results, "=====\n")
-	fmt.Println(strings.Join(results, ""))
+
+	if fileOutputFlag {
+		err = writeResultsToFile(filePath, results)
+		if err != nil {
+			return err
+		}
+	} else {
+		fmt.Println(strings.Join(results, ""))
+	}
+
+	return nil
+}
+
+func writeResultsToFile(filePath string, results []string) error {
+	outputFilePath := filepath.Join(outputDir, filepath.Base(filePath)+".txt")
+	outputFile, err := os.Create(outputFilePath)
+	if err != nil {
+		return err
+	}
+	defer outputFile.Close()
+
+	_, err = outputFile.WriteString(strings.Join(results, ""))
+	if err != nil {
+		return err
+	}
 
 	return nil
 }

@@ -13,15 +13,24 @@ import (
 )
 
 var (
-	angularFlag        bool
-	thymeleafFlag      bool
-	scriptFlag         bool
-	fileOutputFlag     bool
-	outputDir          string
+	angularFlag    bool
+	thymeleafFlag  bool
+	scriptFlag     bool
+	fileOutputFlag bool
+	outputDir      string
+
 	totalAngularVars   int // Nuevo contador total para variables Angular
 	totalThymeleafVars int // Contador total para variables Thymeleaf
 	totalScriptTags    int // Contador total para etiquetas de scripts
 	totalHtmlFiles     int // Nuevo contador total para archivos HTML
+
+	// Nuevo contador total para archivos HTML sin etiquetas de script y con ellas
+	totalHtmlFilesWithoutScriptTags int
+	totalHtmlFilesWithScriptTags    int
+
+	// Nuevo contador total para archivos HTML sin variables y con ellas
+	totalHtmlFilesWithoutVars int
+	totalHtmlFilesWithVars    int
 
 	rootCmd = &cobra.Command{
 		Use:   "main",
@@ -113,6 +122,9 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 		return nil
 	}
 
+	fileHasScriptTags := false
+	fileHasVars := false
+
 	file, err := os.Open(filePath)
 	if err != nil {
 		return fmt.Errorf("failed to open file: %w", err)
@@ -139,6 +151,11 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 		for _, count := range angularVars {
 			totalAngularVars += count
 		}
+
+		// Si el archivo tiene variables Angular, marcar fileHasVars como true
+		if len(angularVars) > 0 || len(angularAttrs) > 0 {
+			fileHasVars = true
+		}
 	}
 
 	if thymeleafFlag {
@@ -153,6 +170,11 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 		for _, count := range thymeleafVars {
 			totalThymeleafVars += count
 		}
+
+		// Si el archivo tiene variables Thymeleaf, marcar fileHasVars como true
+		if len(thymeleafVars) > 0 || len(thymeleafAttrs) > 0 {
+			fileHasVars = true
+		}
 	}
 
 	if scriptFlag {
@@ -163,6 +185,25 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 		totalScriptTags += scriptCount
 
 		results = append(results, fmt.Sprintf("Number of <script> tags: %d\n", scriptCount))
+
+		// Si el archivo tiene etiquetas de script, marcar fileHasScriptTags como true
+		if scriptCount > 0 {
+			fileHasScriptTags = true
+		}
+	}
+
+	// Incrementar contadores de archivos sin etiquetas de script y con ellas
+	if fileHasScriptTags {
+		totalHtmlFilesWithScriptTags++
+	} else {
+		totalHtmlFilesWithoutScriptTags++
+	}
+
+	// Incrementar contadores de archivos sin variables y con ellas
+	if fileHasVars {
+		totalHtmlFilesWithVars++
+	} else {
+		totalHtmlFilesWithoutVars++
 	}
 
 	results = append(results, "=====\n")
@@ -260,6 +301,26 @@ func writeTotalCountToFile() error {
 
 	// Escribir el contador total de archivos HTML en el archivo
 	_, err = outputFile.WriteString(fmt.Sprintf("Total HTML Files: %d\n", totalHtmlFiles))
+	if err != nil {
+		return err
+	}
+
+	// Escribir contadores de archivos sin etiquetas de script y con ellas en el archivo
+	_, err = outputFile.WriteString(fmt.Sprintf("Total HTML Files Without Script Tags: %d\n", totalHtmlFilesWithoutScriptTags))
+	if err != nil {
+		return err
+	}
+	_, err = outputFile.WriteString(fmt.Sprintf("Total HTML Files With Script Tags: %d\n", totalHtmlFilesWithScriptTags))
+	if err != nil {
+		return err
+	}
+
+	// Escribir contadores de archivos sin variables y con ellas en el archivo
+	_, err = outputFile.WriteString(fmt.Sprintf("Total HTML Files Without Variables: %d\n", totalHtmlFilesWithoutVars))
+	if err != nil {
+		return err
+	}
+	_, err = outputFile.WriteString(fmt.Sprintf("Total HTML Files With Variables: %d\n", totalHtmlFilesWithVars))
 	if err != nil {
 		return err
 	}

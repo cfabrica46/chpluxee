@@ -1,0 +1,33 @@
+File: ../../consumers-web/consumers-web/target/classes/templates/pago-online/index.html
+Thymeleaf attributes:
+  th:case: 8 occurrences
+  th:with: 36 occurrences
+  th:text: 81 occurrences
+  th:if: 55 occurrences
+  th:checked: 15 occurrences
+  th:value: 36 occurrences
+  th:name: 3 occurrences
+  th:unless: 2 occurrences
+  th:inline: 44 occurrences
+  th:alt: 12 occurrences
+  th:class: 2 occurrences
+  th:src: 645 occurrences
+  th:switch: 2 occurrences
+  th:utext: 23 occurrences
+  th:each: 19 occurrences
+  th:attr: 14 occurrences
+  th:maxlength: 16 occurrences
+  th:href: 514 occurrences
+  th:remove: 159 occurrences
+  th:style: 2 occurrences
+  th:content: 68 occurrences
+  th:action: 19 occurrences
+
+Thymeleaf variables:
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
+  urlLogout: 4 occurrences
+  urlGateway: 11 occurrences
+  contextRoot: 4 occurrences
+
+Number of <script> tags: 3
+=====

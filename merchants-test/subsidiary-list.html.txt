@@ -1,0 +1,46 @@
+File: ../../merchants-web/merchants-web/target/classes/templates/associate-file/components/subsidiary/subsidiary-list.html
+Thymeleaf attributes:
+  th:value: 117 occurrences
+  th:text: 304 occurrences
+  th:switch: 15 occurrences
+  th:case: 52 occurrences
+  th:class: 5 occurrences
+  th:if: 112 occurrences
+  th:include: 18 occurrences
+  th:id: 3 occurrences
+  th:disabled: 9 occurrences
+  th:inline: 27 occurrences
+  th:alt: 12 occurrences
+  th:selected: 4 occurrences
+  th:fragment: 8 occurrences
+  th:content: 10 occurrences
+  th:action: 7 occurrences
+  th:style: 2 occurrences
+  th:maxlength: 3 occurrences
+  th:href: 441 occurrences
+  th:replace: 24 occurrences
+  th:unless: 15 occurrences
+  th:remove: 57 occurrences
+  th:with: 12 occurrences
+  th:src: 366 occurrences
+  th:each: 41 occurrences
+  th:attr: 17 occurrences
+  th:name: 4 occurrences
+  th:onclick: 1 occurrences
+  th:for: 2 occurrences
+  th:classappend: 2 occurrences
+  th:checked: 12 occurrences
+  th:utext: 10 occurrences
+
+Thymeleaf variables:
+  session.modelData.montrarMensajeMontoBajoPN: 1 occurrences
+  T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).URLBASE_ROUTE_3: 1 occurrences
+  #numbers.formatDecimal(order.result.totalAmount,0,"POINT",0,"COMMA"): 3 occurrences
+  #numbers.formatDecimal(order.result.amount_total,0,"POINT",0,"COMMA"): 1 occurrences
+  #numbers.formatDecimal(order.result.amount_discount_retail,0,"POINT",0,"COMMA"): 1 occurrences
+  T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).CONTEXT_ROOT: 4 occurrences
+  T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).URLBASE_ROUTE_1: 2 occurrences
+  urlLogout: 1 occurrences
+
+Number of <script> tags: 0
+=====

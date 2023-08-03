@@ -1,0 +1,33 @@
+File: ../../consumers-web/consumers-web/target/classes/public/error/404.html
+Thymeleaf attributes:
+  th:action: 11 occurrences
+  th:style: 2 occurrences
+  th:content: 40 occurrences
+  th:with: 22 occurrences
+  th:case: 4 occurrences
+  th:alt: 6 occurrences
+  th:text: 51 occurrences
+  th:if: 31 occurrences
+  th:checked: 13 occurrences
+  th:value: 26 occurrences
+  th:name: 2 occurrences
+  th:unless: 2 occurrences
+  th:inline: 27 occurrences
+  th:class: 2 occurrences
+  th:remove: 96 occurrences
+  th:src: 369 occurrences
+  th:switch: 1 occurrences
+  th:utext: 18 occurrences
+  th:each: 11 occurrences
+  th:attr: 8 occurrences
+  th:maxlength: 8 occurrences
+  th:href: 304 occurrences
+
+Thymeleaf variables:
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 2 occurrences
+  urlLogout: 2 occurrences
+  urlGateway: 7 occurrences
+  contextRoot: 4 occurrences
+
+Number of <script> tags: 19
+=====

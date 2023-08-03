@@ -1,0 +1,33 @@
+File: ../../consumers-web/consumers-web/target/classes/templates/emails/activaPagoRut.html
+Thymeleaf attributes:
+  th:with: 22 occurrences
+  th:case: 8 occurrences
+  th:alt: 12 occurrences
+  th:text: 70 occurrences
+  th:if: 44 occurrences
+  th:checked: 15 occurrences
+  th:value: 26 occurrences
+  th:name: 2 occurrences
+  th:unless: 2 occurrences
+  th:inline: 31 occurrences
+  th:class: 2 occurrences
+  th:remove: 108 occurrences
+  th:src: 397 occurrences
+  th:switch: 2 occurrences
+  th:utext: 22 occurrences
+  th:each: 19 occurrences
+  th:attr: 10 occurrences
+  th:maxlength: 8 occurrences
+  th:href: 314 occurrences
+  th:action: 11 occurrences
+  th:style: 2 occurrences
+  th:content: 42 occurrences
+
+Thymeleaf variables:
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
+  urlLogout: 2 occurrences
+  urlGateway: 7 occurrences
+  contextRoot: 4 occurrences
+
+Number of <script> tags: 0
+=====

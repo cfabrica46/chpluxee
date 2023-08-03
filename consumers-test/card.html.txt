@@ -1,0 +1,3 @@
+File: ../../consumers-web/consumers-web/src/docs/generated-docs/card.html
+Number of <script> tags: 0
+=====

@@ -1,0 +1,33 @@
+File: ../../consumers-web/consumers-web/target/classes/templates/private/guide-parvulo.html
+Thymeleaf attributes:
+  th:with: 37 occurrences
+  th:case: 8 occurrences
+  th:alt: 12 occurrences
+  th:text: 93 occurrences
+  th:if: 56 occurrences
+  th:checked: 15 occurrences
+  th:value: 36 occurrences
+  th:name: 3 occurrences
+  th:unless: 2 occurrences
+  th:inline: 47 occurrences
+  th:class: 2 occurrences
+  th:remove: 171 occurrences
+  th:src: 683 occurrences
+  th:switch: 2 occurrences
+  th:utext: 24 occurrences
+  th:each: 19 occurrences
+  th:attr: 14 occurrences
+  th:maxlength: 16 occurrences
+  th:href: 525 occurrences
+  th:action: 20 occurrences
+  th:style: 2 occurrences
+  th:content: 72 occurrences
+
+Thymeleaf variables:
+  contextRoot: 4 occurrences
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
+  urlLogout: 4 occurrences
+  urlGateway: 12 occurrences
+
+Number of <script> tags: 7
+=====

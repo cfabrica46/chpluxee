@@ -1,0 +1,7 @@
+Total Thymeleaf Variables: 2158
+Total Script Tags: 652
+Total HTML Files: 314
+Total HTML Files Without Script Tags: 186
+Total HTML Files With Script Tags: 128
+Total HTML Files Without Variables: 126
+Total HTML Files With Variables: 188

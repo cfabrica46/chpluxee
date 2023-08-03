@@ -1,0 +1,33 @@
+File: ../../consumers-web/consumers-web/target/classes/templates/vivir-bien/listado-articulos.html
+Thymeleaf attributes:
+  th:case: 8 occurrences
+  th:with: 41 occurrences
+  th:text: 100 occurrences
+  th:if: 58 occurrences
+  th:checked: 26 occurrences
+  th:value: 50 occurrences
+  th:name: 4 occurrences
+  th:unless: 4 occurrences
+  th:inline: 52 occurrences
+  th:alt: 12 occurrences
+  th:class: 4 occurrences
+  th:src: 731 occurrences
+  th:switch: 2 occurrences
+  th:utext: 27 occurrences
+  th:each: 19 occurrences
+  th:attr: 16 occurrences
+  th:maxlength: 16 occurrences
+  th:href: 579 occurrences
+  th:remove: 182 occurrences
+  th:style: 4 occurrences
+  th:content: 78 occurrences
+  th:action: 22 occurrences
+
+Thymeleaf variables:
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
+  urlLogout: 4 occurrences
+  urlGateway: 14 occurrences
+  contextRoot: 5 occurrences
+
+Number of <script> tags: 1
+=====

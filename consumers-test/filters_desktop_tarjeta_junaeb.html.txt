@@ -1,0 +1,6 @@
+File: ../../consumers-web/consumers-web/src/main/resources/static/templates/filters_desktop_tarjeta_junaeb.html
+Thymeleaf attributes:
+  th:inline: 2 occurrences
+
+Number of <script> tags: 0
+=====

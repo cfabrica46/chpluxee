@@ -1,0 +1,6 @@
+File: ../../consumers-web/consumers-web/src/main/resources/static/templates/filters_mobile_tarjeta_privado.html
+Thymeleaf attributes:
+  th:inline: 2 occurrences
+
+Number of <script> tags: 0
+=====

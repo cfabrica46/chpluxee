@@ -124,6 +124,7 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 
 	fileHasScriptTags := false
 	fileHasVars := false
+	scriptCount := 0
 
 	file, err := os.Open(filePath)
 	if err != nil {
@@ -179,7 +180,7 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 
 	if scriptFlag {
 		scriptDetector := attrdet.BaseDetector{}
-		scriptCount := scriptDetector.DetectScriptTags(doc)
+		scriptCount = scriptDetector.DetectScriptTags(doc)
 
 		// Añadir las etiquetas de script al contador total
 		totalScriptTags += scriptCount
@@ -207,6 +208,11 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 	}
 
 	results = append(results, "=====\n")
+
+	// No crear archivo si no hay ninguna variable, atributo o script
+	if len(angularAttrs) == 0 && len(thymeleafAttrs) == 0 && len(angularVars) == 0 && len(thymeleafVars) == 0 && scriptCount == 0 {
+		return nil
+	}
 
 	if fileOutputFlag {
 		err = writeResultsToFile(filePath, results)

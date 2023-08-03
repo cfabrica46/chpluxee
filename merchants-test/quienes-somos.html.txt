@@ -1,36 +1,36 @@
 File: ../../merchants-web/merchants-web/target/classes/templates/private/quienes-somos.html
 Thymeleaf attributes:
-  th:name: 7 occurrences
-  th:onclick: 2 occurrences
-  th:for: 2 occurrences
-  th:classappend: 2 occurrences
-  th:src: 632 occurrences
   th:each: 59 occurrences
-  th:attr: 19 occurrences
-  th:checked: 19 occurrences
-  th:utext: 20 occurrences
-  th:case: 60 occurrences
-  th:class: 6 occurrences
-  th:value: 176 occurrences
   th:text: 456 occurrences
-  th:switch: 17 occurrences
+  th:case: 60 occurrences
+  th:classappend: 2 occurrences
+  th:for: 2 occurrences
+  th:href: 738 occurrences
+  th:action: 13 occurrences
+  th:maxlength: 6 occurrences
+  th:onclick: 2 occurrences
   th:disabled: 9 occurrences
-  th:if: 178 occurrences
+  th:inline: 39 occurrences
+  th:remove: 99 occurrences
+  th:fragment: 12 occurrences
   th:include: 28 occurrences
   th:id: 4 occurrences
-  th:fragment: 12 occurrences
-  th:inline: 39 occurrences
-  th:alt: 21 occurrences
-  th:selected: 6 occurrences
-  th:maxlength: 6 occurrences
-  th:content: 20 occurrences
-  th:action: 13 occurrences
-  th:style: 3 occurrences
-  th:remove: 99 occurrences
-  th:with: 24 occurrences
-  th:href: 738 occurrences
-  th:replace: 44 occurrences
+  th:if: 178 occurrences
+  th:switch: 17 occurrences
+  th:name: 7 occurrences
   th:unless: 23 occurrences
+  th:utext: 20 occurrences
+  th:selected: 6 occurrences
+  th:with: 24 occurrences
+  th:value: 176 occurrences
+  th:src: 632 occurrences
+  th:replace: 44 occurrences
+  th:attr: 19 occurrences
+  th:content: 20 occurrences
+  th:alt: 21 occurrences
+  th:style: 3 occurrences
+  th:checked: 19 occurrences
+  th:class: 6 occurrences
 
 Thymeleaf variables:
   urlLogout: 2 occurrences

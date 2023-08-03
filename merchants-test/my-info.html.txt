@@ -1,39 +1,38 @@
 File: ../../merchants-web/merchants-web/target/classes/templates/user-info/my-info.html
 Thymeleaf attributes:
-  th:utext: 20 occurrences
-  th:class: 10 occurrences
   th:value: 201 occurrences
+  th:src: 684 occurrences
+  th:replace: 44 occurrences
+  th:attr: 29 occurrences
+  th:content: 20 occurrences
+  th:selected: 8 occurrences
+  th:with: 24 occurrences
+  th:alt: 22 occurrences
+  th:style: 3 occurrences
+  th:checked: 24 occurrences
+  th:class: 10 occurrences
+  th:each: 71 occurrences
   th:text: 514 occurrences
-  th:switch: 17 occurrences
   th:case: 60 occurrences
+  th:classappend: 2 occurrences
+  th:href: 814 occurrences
+  th:action: 14 occurrences
+  th:maxlength: 6 occurrences
+  th:onclick: 2 occurrences
+  th:disabled: 18 occurrences
+  th:for: 4 occurrences
+  th:inline: 46 occurrences
+  th:remove: 111 occurrences
+  th:fragment: 12 occurrences
   th:if: 208 occurrences
+  th:switch: 17 occurrences
+  th:name: 8 occurrences
+  th:unless: 25 occurrences
+  th:utext: 20 occurrences
   th:include: 28 occurrences
   th:id: 6 occurrences
-  th:disabled: 18 occurrences
-  th:inline: 46 occurrences
-  th:alt: 22 occurrences
-  th:selected: 8 occurrences
-  th:fragment: 12 occurrences
-  th:content: 20 occurrences
-  th:action: 14 occurrences
-  th:style: 3 occurrences
-  th:maxlength: 6 occurrences
-  th:with: 24 occurrences
-  th:href: 814 occurrences
-  th:replace: 44 occurrences
-  th:unless: 25 occurrences
-  th:remove: 111 occurrences
-  th:onclick: 2 occurrences
-  th:for: 4 occurrences
-  th:classappend: 2 occurrences
-  th:src: 684 occurrences
-  th:each: 71 occurrences
-  th:attr: 29 occurrences
-  th:name: 8 occurrences
-  th:checked: 24 occurrences
 
 Thymeleaf variables:
-  #numbers.formatDecimal(order.result.amount_discount_retail,0,"POINT",0,"COMMA"): 1 occurrences
   T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).CONTEXT_ROOT: 8 occurrences
   T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
   urlLogout: 2 occurrences
@@ -41,6 +40,7 @@ Thymeleaf variables:
   T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).URLBASE_ROUTE_3: 1 occurrences
   #numbers.formatDecimal(order.result.totalAmount,0,"POINT",0,"COMMA"): 3 occurrences
   #numbers.formatDecimal(order.result.amount_total,0,"POINT",0,"COMMA"): 1 occurrences
+  #numbers.formatDecimal(order.result.amount_discount_retail,0,"POINT",0,"COMMA"): 1 occurrences
 
 Number of <script> tags: 1
 =====

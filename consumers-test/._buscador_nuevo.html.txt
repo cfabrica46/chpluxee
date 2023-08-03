@@ -1,3 +1,0 @@
-File: ../../consumers-web/__MACOSX/consumers-web/src/main/resources/templates/searcher/._buscador_nuevo.html
-Number of <script> tags: 0
-=====

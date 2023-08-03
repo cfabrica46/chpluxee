@@ -1,33 +1,33 @@
 File: ../../consumers-web/consumers-web/target/classes/templates/club/detalle-convenio.html
 Thymeleaf attributes:
-  th:case: 8 occurrences
-  th:with: 22 occurrences
-  th:name: 2 occurrences
-  th:unless: 2 occurrences
-  th:inline: 30 occurrences
-  th:alt: 10 occurrences
-  th:text: 60 occurrences
   th:if: 37 occurrences
-  th:checked: 14 occurrences
+  th:with: 22 occurrences
   th:value: 26 occurrences
+  th:name: 2 occurrences
+  th:style: 2 occurrences
+  th:inline: 30 occurrences
+  th:case: 8 occurrences
+  th:checked: 14 occurrences
+  th:action: 11 occurrences
   th:class: 2 occurrences
-  th:attr: 9 occurrences
-  th:maxlength: 8 occurrences
   th:href: 312 occurrences
-  th:remove: 101 occurrences
-  th:src: 378 occurrences
   th:switch: 2 occurrences
   th:utext: 19 occurrences
   th:each: 15 occurrences
   th:content: 40 occurrences
-  th:action: 11 occurrences
-  th:style: 2 occurrences
+  th:alt: 10 occurrences
+  th:text: 60 occurrences
+  th:attr: 9 occurrences
+  th:maxlength: 8 occurrences
+  th:unless: 2 occurrences
+  th:remove: 101 occurrences
+  th:src: 378 occurrences
 
 Thymeleaf variables:
-  urlGateway: 7 occurrences
-  contextRoot: 4 occurrences
   T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 3 occurrences
   urlLogout: 2 occurrences
+  urlGateway: 7 occurrences
+  contextRoot: 4 occurrences
 
 Number of <script> tags: 5
 =====

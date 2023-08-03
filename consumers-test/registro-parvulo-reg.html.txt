@@ -1,33 +1,33 @@
 File: ../../consumers-web/consumers-web/target/classes/templates/outside/registro-parvulo-reg.html
 Thymeleaf attributes:
+  th:remove: 138 occurrences
+  th:src: 569 occurrences
+  th:attr: 14 occurrences
+  th:maxlength: 16 occurrences
   th:unless: 2 occurrences
   th:inline: 39 occurrences
-  th:alt: 12 occurrences
-  th:text: 80 occurrences
+  th:case: 8 occurrences
   th:if: 48 occurrences
-  th:checked: 15 occurrences
+  th:with: 32 occurrences
   th:value: 33 occurrences
   th:name: 3 occurrences
-  th:class: 2 occurrences
-  th:maxlength: 16 occurrences
+  th:style: 2 occurrences
   th:href: 478 occurrences
-  th:remove: 138 occurrences
-  th:src: 572 occurrences
   th:switch: 2 occurrences
+  th:checked: 15 occurrences
+  th:action: 16 occurrences
+  th:class: 2 occurrences
+  th:alt: 12 occurrences
+  th:text: 80 occurrences
   th:utext: 23 occurrences
   th:each: 19 occurrences
-  th:attr: 14 occurrences
   th:content: 52 occurrences
-  th:action: 16 occurrences
-  th:style: 2 occurrences
-  th:case: 8 occurrences
-  th:with: 32 occurrences
 
 Thymeleaf variables:
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
   urlLogout: 4 occurrences
   urlGateway: 9 occurrences
   contextRoot: 4 occurrences
-  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
 
 Number of <script> tags: 0
 =====

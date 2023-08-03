@@ -1,33 +1,33 @@
 File: ../../consumers-web/consumers-web/target/classes/templates/mail/mailVoucherOkUsuario.html
 Thymeleaf attributes:
-  th:checked: 15 occurrences
+  th:style: 2 occurrences
+  th:inline: 38 occurrences
+  th:case: 8 occurrences
+  th:if: 46 occurrences
+  th:with: 31 occurrences
   th:value: 32 occurrences
   th:name: 3 occurrences
-  th:unless: 2 occurrences
-  th:inline: 38 occurrences
+  th:href: 400 occurrences
+  th:switch: 2 occurrences
+  th:checked: 15 occurrences
+  th:action: 14 occurrences
+  th:class: 2 occurrences
   th:alt: 12 occurrences
   th:text: 76 occurrences
-  th:if: 46 occurrences
-  th:class: 2 occurrences
   th:utext: 23 occurrences
   th:each: 19 occurrences
+  th:content: 44 occurrences
+  th:remove: 111 occurrences
+  th:src: 475 occurrences
   th:attr: 11 occurrences
   th:maxlength: 12 occurrences
-  th:href: 400 occurrences
-  th:remove: 111 occurrences
-  th:src: 478 occurrences
-  th:switch: 2 occurrences
-  th:content: 44 occurrences
-  th:action: 14 occurrences
-  th:style: 2 occurrences
-  th:case: 8 occurrences
-  th:with: 31 occurrences
+  th:unless: 2 occurrences
 
 Thymeleaf variables:
+  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
   urlLogout: 4 occurrences
   urlGateway: 8 occurrences
   contextRoot: 4 occurrences
-  T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
 
 Number of <script> tags: 0
 =====

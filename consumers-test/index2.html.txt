@@ -1,33 +1,33 @@
 File: ../../consumers-web/consumers-web/target/classes/templates/pago-online/index2.html
 Thymeleaf attributes:
-  th:content: 70 occurrences
-  th:action: 19 occurrences
-  th:style: 2 occurrences
-  th:case: 8 occurrences
-  th:with: 37 occurrences
-  th:name: 3 occurrences
-  th:unless: 2 occurrences
-  th:inline: 45 occurrences
   th:alt: 12 occurrences
   th:text: 81 occurrences
-  th:if: 55 occurrences
-  th:checked: 15 occurrences
-  th:value: 36 occurrences
-  th:class: 2 occurrences
-  th:attr: 14 occurrences
-  th:maxlength: 16 occurrences
-  th:href: 515 occurrences
-  th:remove: 160 occurrences
-  th:src: 648 occurrences
-  th:switch: 2 occurrences
   th:utext: 23 occurrences
   th:each: 19 occurrences
+  th:content: 70 occurrences
+  th:remove: 160 occurrences
+  th:src: 645 occurrences
+  th:attr: 14 occurrences
+  th:maxlength: 16 occurrences
+  th:unless: 2 occurrences
+  th:name: 3 occurrences
+  th:style: 2 occurrences
+  th:inline: 45 occurrences
+  th:case: 8 occurrences
+  th:if: 55 occurrences
+  th:with: 37 occurrences
+  th:value: 36 occurrences
+  th:href: 515 occurrences
+  th:switch: 2 occurrences
+  th:checked: 15 occurrences
+  th:action: 19 occurrences
+  th:class: 2 occurrences
 
 Thymeleaf variables:
-  urlGateway: 12 occurrences
-  contextRoot: 4 occurrences
   T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
   urlLogout: 4 occurrences
+  urlGateway: 12 occurrences
+  contextRoot: 4 occurrences
 
 Number of <script> tags: 3
 =====

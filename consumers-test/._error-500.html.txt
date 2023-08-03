@@ -1,3 +1,0 @@
-File: ../../consumers-web/__MACOSX/consumers-web/src/main/resources/templates/outside/._error-500.html
-Number of <script> tags: 0
-=====

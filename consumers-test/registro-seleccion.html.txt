@@ -1,27 +1,27 @@
 File: ../../consumers-web/consumers-web/target/classes/templates/outside/registro-seleccion.html
 Thymeleaf attributes:
-  th:href: 482 occurrences
-  th:remove: 142 occurrences
-  th:src: 589 occurrences
-  th:switch: 2 occurrences
-  th:utext: 23 occurrences
-  th:each: 19 occurrences
-  th:attr: 14 occurrences
-  th:maxlength: 16 occurrences
-  th:content: 56 occurrences
-  th:action: 17 occurrences
+  th:name: 3 occurrences
   th:style: 2 occurrences
-  th:case: 8 occurrences
-  th:with: 32 occurrences
   th:inline: 40 occurrences
+  th:case: 8 occurrences
+  th:if: 48 occurrences
+  th:with: 32 occurrences
+  th:value: 33 occurrences
+  th:href: 482 occurrences
+  th:switch: 2 occurrences
+  th:checked: 15 occurrences
+  th:action: 17 occurrences
+  th:class: 2 occurrences
   th:alt: 12 occurrences
   th:text: 80 occurrences
-  th:if: 48 occurrences
-  th:checked: 15 occurrences
-  th:value: 33 occurrences
-  th:name: 3 occurrences
+  th:utext: 23 occurrences
+  th:each: 19 occurrences
+  th:content: 56 occurrences
+  th:remove: 142 occurrences
+  th:src: 586 occurrences
+  th:attr: 14 occurrences
+  th:maxlength: 16 occurrences
   th:unless: 2 occurrences
-  th:class: 2 occurrences
 
 Thymeleaf variables:
   T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences

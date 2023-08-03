@@ -1,33 +1,33 @@
 File: ../../consumers-web/consumers-web/target/classes/templates/layout/main.html
 Thymeleaf attributes:
-  th:remove: 110 occurrences
-  th:src: 446 occurrences
-  th:switch: 2 occurrences
-  th:utext: 22 occurrences
-  th:each: 19 occurrences
-  th:attr: 11 occurrences
-  th:maxlength: 12 occurrences
-  th:href: 360 occurrences
   th:action: 12 occurrences
-  th:style: 2 occurrences
+  th:class: 2 occurrences
+  th:href: 360 occurrences
+  th:switch: 2 occurrences
+  th:checked: 15 occurrences
+  th:each: 19 occurrences
   th:content: 42 occurrences
-  th:with: 28 occurrences
-  th:case: 8 occurrences
   th:alt: 12 occurrences
   th:text: 72 occurrences
-  th:if: 45 occurrences
-  th:checked: 15 occurrences
+  th:utext: 22 occurrences
+  th:maxlength: 12 occurrences
+  th:unless: 2 occurrences
+  th:remove: 110 occurrences
+  th:src: 444 occurrences
+  th:attr: 11 occurrences
+  th:with: 28 occurrences
   th:value: 29 occurrences
   th:name: 3 occurrences
-  th:unless: 2 occurrences
+  th:style: 2 occurrences
   th:inline: 35 occurrences
-  th:class: 2 occurrences
+  th:case: 8 occurrences
+  th:if: 45 occurrences
 
 Thymeleaf variables:
+  contextRoot: 4 occurrences
   T(cl.sodexobeneficios.consumers_web.util.ConstantsUtil).URLBASE_ROUTE_1: 4 occurrences
   urlLogout: 3 occurrences
   urlGateway: 8 occurrences
-  contextRoot: 4 occurrences
 
 Number of <script> tags: 25
 =====

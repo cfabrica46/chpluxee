@@ -1,36 +1,36 @@
 File: ../../merchants-web/merchants-web/target/classes/templates/private/article-detail.html
 Thymeleaf attributes:
-  th:if: 145 occurrences
+  th:text: 422 occurrences
+  th:case: 60 occurrences
+  th:classappend: 2 occurrences
+  th:onclick: 1 occurrences
+  th:disabled: 9 occurrences
+  th:for: 2 occurrences
+  th:href: 698 occurrences
+  th:action: 13 occurrences
+  th:maxlength: 3 occurrences
+  th:inline: 38 occurrences
+  th:remove: 86 occurrences
+  th:fragment: 12 occurrences
+  th:unless: 23 occurrences
+  th:utext: 20 occurrences
   th:include: 23 occurrences
   th:id: 3 occurrences
-  th:disabled: 9 occurrences
-  th:inline: 38 occurrences
-  th:alt: 21 occurrences
-  th:selected: 6 occurrences
-  th:fragment: 12 occurrences
-  th:content: 20 occurrences
-  th:action: 13 occurrences
-  th:style: 3 occurrences
-  th:maxlength: 3 occurrences
-  th:href: 698 occurrences
-  th:replace: 44 occurrences
-  th:unless: 23 occurrences
-  th:remove: 86 occurrences
-  th:with: 24 occurrences
-  th:for: 2 occurrences
-  th:classappend: 2 occurrences
-  th:src: 611 occurrences
-  th:each: 53 occurrences
-  th:attr: 19 occurrences
-  th:name: 7 occurrences
-  th:onclick: 1 occurrences
-  th:checked: 19 occurrences
-  th:utext: 20 occurrences
-  th:value: 152 occurrences
-  th:text: 422 occurrences
+  th:if: 145 occurrences
   th:switch: 17 occurrences
-  th:case: 60 occurrences
+  th:name: 7 occurrences
+  th:attr: 19 occurrences
+  th:content: 20 occurrences
+  th:selected: 6 occurrences
+  th:with: 24 occurrences
+  th:value: 152 occurrences
+  th:src: 611 occurrences
+  th:replace: 44 occurrences
+  th:alt: 21 occurrences
+  th:style: 3 occurrences
+  th:checked: 19 occurrences
   th:class: 5 occurrences
+  th:each: 53 occurrences
 
 Thymeleaf variables:
   #numbers.formatDecimal(order.result.totalAmount,0,"POINT",0,"COMMA"): 3 occurrences

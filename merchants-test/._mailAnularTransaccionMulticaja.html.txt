@@ -1,3 +1,0 @@
-File: ../../merchants-web/__MACOSX/merchants-web/target/classes/templates/mail/._mailAnularTransaccionMulticaja.html
-Number of <script> tags: 0
-=====

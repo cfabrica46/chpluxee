@@ -1,36 +1,36 @@
 File: ../../merchants-web/merchants-web/target/classes/templates/branches/my-branch.html
 Thymeleaf attributes:
-  th:replace: 44 occurrences
-  th:unless: 20 occurrences
-  th:remove: 58 occurrences
-  th:with: 12 occurrences
-  th:href: 465 occurrences
-  th:each: 46 occurrences
-  th:attr: 18 occurrences
-  th:name: 6 occurrences
-  th:onclick: 1 occurrences
-  th:for: 2 occurrences
-  th:classappend: 2 occurrences
-  th:src: 429 occurrences
-  th:checked: 18 occurrences
-  th:utext: 10 occurrences
   th:text: 323 occurrences
-  th:switch: 16 occurrences
   th:case: 56 occurrences
-  th:class: 5 occurrences
-  th:value: 142 occurrences
+  th:classappend: 2 occurrences
+  th:disabled: 9 occurrences
+  th:for: 2 occurrences
+  th:href: 465 occurrences
+  th:action: 7 occurrences
+  th:maxlength: 3 occurrences
+  th:onclick: 1 occurrences
+  th:inline: 29 occurrences
+  th:remove: 58 occurrences
+  th:fragment: 8 occurrences
+  th:utext: 10 occurrences
   th:include: 18 occurrences
   th:id: 3 occurrences
-  th:disabled: 9 occurrences
   th:if: 129 occurrences
-  th:alt: 14 occurrences
-  th:selected: 5 occurrences
-  th:fragment: 8 occurrences
-  th:inline: 29 occurrences
-  th:action: 7 occurrences
-  th:style: 2 occurrences
-  th:maxlength: 3 occurrences
+  th:switch: 16 occurrences
+  th:name: 6 occurrences
+  th:unless: 20 occurrences
   th:content: 14 occurrences
+  th:selected: 5 occurrences
+  th:with: 12 occurrences
+  th:value: 142 occurrences
+  th:src: 429 occurrences
+  th:replace: 44 occurrences
+  th:attr: 18 occurrences
+  th:alt: 14 occurrences
+  th:style: 2 occurrences
+  th:checked: 18 occurrences
+  th:class: 5 occurrences
+  th:each: 46 occurrences
 
 Thymeleaf variables:
   T(cl.sodexobeneficios.merchants_web.util.ConstantsUtil).CONTEXT_ROOT: 5 occurrences

@@ -1,3 +1,0 @@
-File: ../../consumers-web/__MACOSX/consumers-web/src/main/resources/static/templates/._filters_desktop_tarjeta_junaeb.html
-Number of <script> tags: 0
-=====

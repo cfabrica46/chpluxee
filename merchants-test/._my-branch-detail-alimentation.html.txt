@@ -1,3 +1,0 @@
-File: ../../merchants-web/__MACOSX/merchants-web/target/classes/templates/branches/detail/._my-branch-detail-alimentation.html
-Number of <script> tags: 0
-=====

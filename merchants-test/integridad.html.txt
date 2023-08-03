@@ -1,36 +1,36 @@
 File: ../../merchants-web/merchants-web/target/classes/templates/outside/integridad.html
 Thymeleaf attributes:
-  th:utext: 14 occurrences
-  th:value: 151 occurrences
-  th:text: 389 occurrences
-  th:switch: 17 occurrences
-  th:case: 60 occurrences
-  th:class: 5 occurrences
   th:if: 143 occurrences
+  th:switch: 17 occurrences
+  th:name: 7 occurrences
+  th:unless: 23 occurrences
+  th:utext: 14 occurrences
   th:include: 18 occurrences
   th:id: 3 occurrences
-  th:disabled: 9 occurrences
-  th:inline: 37 occurrences
-  th:alt: 19 occurrences
-  th:selected: 6 occurrences
-  th:fragment: 9 occurrences
-  th:content: 20 occurrences
-  th:action: 10 occurrences
-  th:style: 2 occurrences
-  th:maxlength: 3 occurrences
-  th:href: 624 occurrences
-  th:replace: 44 occurrences
-  th:unless: 23 occurrences
-  th:remove: 70 occurrences
-  th:with: 22 occurrences
+  th:value: 151 occurrences
   th:src: 556 occurrences
-  th:each: 52 occurrences
+  th:replace: 44 occurrences
   th:attr: 19 occurrences
-  th:name: 7 occurrences
-  th:onclick: 1 occurrences
-  th:for: 2 occurrences
-  th:classappend: 2 occurrences
+  th:content: 20 occurrences
+  th:selected: 6 occurrences
+  th:with: 22 occurrences
+  th:alt: 19 occurrences
+  th:style: 2 occurrences
   th:checked: 19 occurrences
+  th:class: 5 occurrences
+  th:each: 52 occurrences
+  th:text: 389 occurrences
+  th:case: 60 occurrences
+  th:classappend: 2 occurrences
+  th:href: 624 occurrences
+  th:action: 10 occurrences
+  th:maxlength: 3 occurrences
+  th:onclick: 1 occurrences
+  th:disabled: 9 occurrences
+  th:for: 2 occurrences
+  th:inline: 37 occurrences
+  th:remove: 70 occurrences
+  th:fragment: 9 occurrences
 
 Thymeleaf variables:
   session.modelData.montrarMensajeMontoBajoPN: 1 occurrences

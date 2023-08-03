@@ -1,3 +1,0 @@
-File: ../../consumers-web/__MACOSX/consumers-web/src/main/resources/static/templates/._filters_mobile_cheque_restaurant.html
-Number of <script> tags: 0
-=====

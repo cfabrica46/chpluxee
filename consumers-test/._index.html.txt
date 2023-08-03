@@ -1,3 +1,0 @@
-File: ../../consumers-web/__MACOSX/consumers-web/src/main/resources/templates/main/._index.html
-Number of <script> tags: 0
-=====

@@ -13,12 +13,17 @@ import (
 )
 
 var (
-	angularFlag    bool
-	thymeleafFlag  bool
-	scriptFlag     bool
-	fileOutputFlag bool
-	outputDir      string
-	rootCmd        = &cobra.Command{
+	angularFlag        bool
+	thymeleafFlag      bool
+	scriptFlag         bool
+	fileOutputFlag     bool
+	outputDir          string
+	totalAngularVars   int // Nuevo contador total para variables Angular
+	totalThymeleafVars int // Contador total para variables Thymeleaf
+	totalScriptTags    int // Contador total para etiquetas de scripts
+	totalHtmlFiles     int // Nuevo contador total para archivos HTML
+
+	rootCmd = &cobra.Command{
 		Use:   "main",
 		Short: "Attribute detector",
 		Long:  `This program detects certain attributes in HTML files.`,
@@ -45,7 +50,18 @@ var (
 				os.Exit(1)
 			}
 
-			return processFolder(folderPath, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
+			err = processFolder(folderPath, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars)
+			if err != nil {
+				return err
+			}
+
+			// Al final del análisis, imprimir y guardar los contadores totales
+			err = writeTotalCountToFile()
+			if err != nil {
+				return err
+			}
+
+			return nil
 		},
 	}
 )
@@ -63,6 +79,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "Error:", err)
 		os.Exit(1)
 	}
+	fmt.Println("🚀 Éxito increíble! Has logrado correr el script sin problemas. ¡Sigue con el gran trabajo!")
 }
 
 func processFolder(folderPath string, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int) error {
@@ -91,7 +108,7 @@ func processFolder(folderPath string, angularAttrs, thymeleafAttrs, angularVars,
 func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thymeleafVars map[string]int) error {
 	switch filepath.Ext(filePath) {
 	case ".html", ".mst":
-		// continue
+		totalHtmlFiles++
 	default:
 		return nil
 	}
@@ -117,6 +134,11 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 
 		results = append(results, formatAttributes("Angular (ng) attributes:", angularAttrs))
 		results = append(results, formatVariables("Angular variables:", angularVars))
+
+		// Añadir las variables de Angular al contador total
+		for _, count := range angularVars {
+			totalAngularVars += count
+		}
 	}
 
 	if thymeleafFlag {
@@ -126,11 +148,19 @@ func processFile(filePath string, angularAttrs, thymeleafAttrs, angularVars, thy
 
 		results = append(results, formatAttributes("Thymeleaf attributes:", thymeleafAttrs))
 		results = append(results, formatVariables("Thymeleaf variables:", thymeleafVars))
+
+		// Añadir las variables de Thymeleaf al contador total
+		for _, count := range thymeleafVars {
+			totalThymeleafVars += count
+		}
 	}
 
 	if scriptFlag {
 		scriptDetector := attrdet.BaseDetector{}
 		scriptCount := scriptDetector.DetectScriptTags(doc)
+
+		// Añadir las etiquetas de script al contador total
+		totalScriptTags += scriptCount
 
 		results = append(results, fmt.Sprintf("Number of <script> tags: %d\n", scriptCount))
 	}
@@ -199,3 +229,40 @@ func formatVariables(title string, variables map[string]int) string {
 	return result
 }
 
+func writeTotalCountToFile() error {
+	outputFilePath := filepath.Join(outputDir, "Total_Counts.txt")
+	outputFile, err := os.Create(outputFilePath)
+	if err != nil {
+		return err
+	}
+	defer outputFile.Close()
+
+	if angularFlag {
+		_, err = outputFile.WriteString(fmt.Sprintf("Total Angular Variables: %d\n", totalAngularVars))
+		if err != nil {
+			return err
+		}
+	}
+
+	if thymeleafFlag {
+		_, err = outputFile.WriteString(fmt.Sprintf("Total Thymeleaf Variables: %d\n", totalThymeleafVars))
+		if err != nil {
+			return err
+		}
+	}
+
+	if scriptFlag {
+		_, err = outputFile.WriteString(fmt.Sprintf("Total Script Tags: %d\n", totalScriptTags))
+		if err != nil {
+			return err
+		}
+	}
+
+	// Escribir el contador total de archivos HTML en el archivo
+	_, err = outputFile.WriteString(fmt.Sprintf("Total HTML Files: %d\n", totalHtmlFiles))
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
